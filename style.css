@@ -28,7 +28,20 @@ body, html {
     padding-bottom: 10px;
 }
 
-ul li{
+@media screen and (max-width: 768px){
+    ul {
+    display:block;
+
+    }
+    .header-nav{
+    padding-right: 90%;
+    }
+}
+
+
+
+
+    ul li{
     list-style:none;
     display: inline;
     padding-right: 10px;}
@@ -36,3 +49,5 @@ ul li{
 .nav_bar{
    padding-left: 50%;
 }
+
+
