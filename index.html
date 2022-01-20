@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Bernie</title>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portfolio Bernie</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap"
+         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    
-    <header class="header">
-        <div class="divHeader">
-       <div> <h1 id="mainhome">Berni</h1></div>
-        <div class="nav_bar"><nav class="header-nav">
-            <ul>
-                <li><a href="#bernie">Bernie</a></li>
-                <li><a href="#realisation">Réalisation</a></li>
-                <li><a href="#propos">A propos</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-            </ul>
-        </nav>
-    </div>
 
-    </div>
-    </header>
+<header class="header">
+   <div class="divHeader">
+       <nav>
 
-    
+           <div class="logo-content">
+               <a href="/">
+                   <h1 id="mainhome">Berni</h1>
+               </a>
+           </div>
+
+           <i id="menuBurger" class="fas fa-bars"></i>
+
+           <div class="nav-menu">
+                <div id="navnav" class="nav-list toggleMenu">
+                    <ul class="nav-list-content">
+                        <li class="nav-item"><a href="#bernie">Bernie</a></li>
+                        <li class="nav-item"><a href="#realisation">Réalisation</a></li>
+                        <li class="nav-item"><a href="#propos">A propos</a></li>
+                        <li class="nav-item"><a href="#contact">Contact</a></li>
+                        <li class="nav-item"><a href="#experiences">Expériences</a></li>
+                    </ul>
+                </div>
+           </div>
+       </nav>
+   </div>
+</header>
+
+
+<script>
+    let ttt = document.getElementById('navnav');
+    let menu = document.getElementById('menuBurger');
+
+    function toggleMenu() {
+        ttt.classList.toggle('toggleMenu')
+    }
+
+    menu.addEventListener('click', toggleMenu)
+</script>
 </body>
 </html>

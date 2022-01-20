@@ -12,45 +12,70 @@ body, html {
     font-family: "Amatic SC", sans-serif;
     font-size: 25px;
     padding: 5px;
-    height: 20%;
     /*regarder comprendre et expliquer images*/
     background-repeat: no-repeat;
     background-size: cover;
     background-color: grey;
 }
-
-.divHeader{
+.nav-list-content {
     display: flex;
-    flex-direction: row;
+}
+.nav-menu {
+    position: relative;
+    margin-left: auto;
+}
+i.fa-bars {
+    display: none;
 }
 
-#mainhome{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#mainhome {
     padding-bottom: 10px;
 }
-    /*regarder comprendre et expliquer */
-    /*je souhaite que le site soit responsif*/
 
-    @media screen and (max-width: 596px){
-    .nav_bar{
+/*regarder comprendre et expliquer */
+/*je souhaite que le site soit responsif*/
+
+@media screen and (max-width: 596px) {
+    .nav-list-content {
         flex-direction: column;
+    }
+    i.fa-bars {
+        display: block;
     }
 
     ul {
-    display:block;
-
+        display: block;
     }
-    .header-nav{
-    padding-right: 90%;
+
+    .toggleMenu {
+        display: none;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 116px;
+        left: 0;
+        width: 100%;
     }
 }
 
-ul li{
-    list-style:none;
+ul li {
+    list-style: none;
     display: inline;
-    padding-right: 10px;}
+    padding-right: 10px;
+}
 
-.nav_bar{
-   padding-left: 50%;
+.nav_bar {
+    padding-left: 50%;
 }
 
 
+
+.test {
+    display: block;
+}
